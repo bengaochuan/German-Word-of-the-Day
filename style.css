@@ -65,10 +65,9 @@ h3#german-word {
 a#english-translation {
     display: block;
     color:#999;
-    margin-bottom: 2em;
     padding-left: 1em;
     font-size: 2em;
-    margin:1em;
+    margin-top:1em;
     margin-bottom: 1.5em;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -151,4 +150,19 @@ small a {
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    h3#german-word, a#english-translation {
+        font-size: 1.7rem;
+    }
+
+    a#english-translation {
+        padding-left: 0;
+    } 
   }
